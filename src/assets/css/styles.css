@@ -1,0 +1,15 @@
+/* Cargamos fuentes externas */
+@font-face{
+	font-family: "yanone";
+	src: url("../fonts/YanoneKaffeesatz-Light.ttf");
+}
+
+@font-face{
+	font-family: "finger";
+	src: url("../fonts/FingerPaint-Regular.ttf");
+}
+
+
+body{
+	font-family: "yanone", Arial, Helvetica;
+}
