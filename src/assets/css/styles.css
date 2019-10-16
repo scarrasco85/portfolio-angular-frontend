@@ -79,3 +79,23 @@ header a:hover{
 header #logo a:hover{
 	background: transparent;
 }
+
+/*  Estilos Logotipo Menú */
+#logo{
+	font-family: finger;
+	font-size: 35px;
+}
+
+/* Metemos un efecto de transición al enlace del color y una transformación, de
+   500ms ambos, definimos la transición en #logo a:hover{} */
+#logo a{
+	transition: color 500ms, tranform 500ms;
+}
+
+/* Al logo como es un enlace también le ponemos fondo transparente para que parezca
+que no tiene función de hover. */
+#logo a:hover{
+	background: transparent;
+	color: black;
+	transform: scale(1.50, 1.50);
+}
