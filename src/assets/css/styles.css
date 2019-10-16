@@ -25,3 +25,57 @@ body{
 	/* Para cuando hagamos scroll no sintamos que el fondo se mueve, si no que se quede fijo. */
 	background-attachment: fixed;
 }
+
+/* Limpiamos los flotados entre los diferentes elementos */
+.clearfix{
+	float: none;
+	clear: both;
+}
+
+/* Header - Cabezera */
+
+header{
+	display: block;
+	width: 100%;
+	height: 90px;
+	background: rgba(53, 103, 164, 0.8);
+	/* Para que se nos quede la barra de navegación siempre fijada arriba */
+	position: fixed;
+	text-transform: uppercase;
+}
+
+/* Menú de navegación */
+header ul{
+	/* para que actúe como un bloque */
+	display: block;
+	width: 50%;
+	height: inherit; /* con inherit hereda del padre */
+	margin: 0px auto;
+	margin-top: -5px;
+}
+
+header ul li{
+	display: inline-block;/* uno al lado del otro */
+	margin: 0px auto;
+	text-align: center;
+	line-height: 90px;
+}
+
+header a{
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: inherit;
+	text-decoration: none;
+	color: white;
+	transition: all 300ms;
+}
+
+/* Le ponemos fondo negro a los enlaces del menú al pasar el ratón por encima. */
+header a:hover{
+	background: rgba(0,0,0,0.8);
+}
+/* Evitamos que el logo tenga la transición cuando pasemos el cursor por encima */
+header #logo a:hover{
+	background: transparent;
+}
