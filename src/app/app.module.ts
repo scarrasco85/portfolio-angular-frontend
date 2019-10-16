@@ -1,7 +1,14 @@
+//Módulos necesarios
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+//Necesario para poder hacer peticiones Ajax
+import { HttpClientModule} from '@angular/common/http';
+//Necesario para usar Two data binding y formularios
+import { FormsModule } from '@angular/forms';
+//Configuración de rutas
 import { AppRoutingModule } from './app-routing.module';
+
+//Componentes aplicación
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -20,7 +27,9 @@ import { ErrorComponent } from './components/error/error.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
