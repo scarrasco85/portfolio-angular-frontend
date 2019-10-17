@@ -30,4 +30,16 @@ export class ProjectService {
 	testService(){
 		return 'Probando el servicio de la entidad Project';
 	}
+
+	//Guarda un nuevo proyecto en la colección projects de la base de datos 'portafolio'
+	//Declaramos que devuelve un Observable de cualquier tipo
+	saveProject(project: Project): Observable<any>{
+		//convertimos los datos recibidos en un objeto JSON para tratarlos con la Api
+		let params = JSON.stringify(project);
+		//Establecemos las cabezeras(cómo se va a enviar la información, es decir, en qué formato)
+		//Así, establecemos que el Content-Type es de tipo 'application/json'
+		let headers = new HttpHeaders().set('Content-Type', 'application/json');
+		//hacemos la petición POST
+		return this._http.post(this.url+'/save-project', params, {headers: headers});
+	}
 }
