@@ -103,7 +103,7 @@ que no tiene función de hover. */
 	transform: scale(1.50, 1.50);
 }
 
-/* Contenedor principal - Content */
+/* Contenedor principal de la página - Content */
 #content{
 	min-height: 500px;
 	height: 100%;
@@ -117,10 +117,65 @@ que no tiene función de hover. */
 	padding-top: 120px;
 }
 
+/* Estilos Contenedor de cada página */
+.container{
+	padding: 50px;
+	padding-top: 10px;
+}
+
+.container h2{
+	display: block;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
 /* Pié de página - Footer */
 footer{
 	width: 75%;
 	margin: 0px auto;
 	padding-top: 15px;
 	color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos formularios de la página */
+
+form{
+	width: 80%;
+}
+
+form label{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+	width: 40%;
+	padding: 5px;
+}
+
+form textarea{
+	min-height: 60px;
+}
+
+form button,
+form input[type="submit"]{
+	display: block;
+	font-size: 17px;
+	padding: 5px;
+	margin-top: 15px;
+	color: white;
+	background: rgba(53, 103, 164, 1);
+	border: 1px solid rgba(13, 67, 133, 1);
+	cursor: pointer;
+}
+
+form button:hover,
+form input[type="submit"]:hover{
+	background: rgba(53, 103, 164, 0.8);
 }

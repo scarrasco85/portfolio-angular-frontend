@@ -30,4 +30,8 @@ export class CreateProjectComponent implements OnInit {
 	ngOnInit() {
 	}
 
+	onSubmit(form){
+		console.log(this.project);
+	}
+
 }
