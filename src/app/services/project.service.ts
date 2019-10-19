@@ -42,4 +42,11 @@ export class ProjectService {
 		//hacemos la petición POST
 		return this._http.post(this.url+'/save-project', params, {headers: headers});
 	}
+
+	//Método que obtiene todos los proyectos de la base de datos usando el método para ello de nuestra Api
+	//de la aplicación(backend)
+	getProjects(): Observable<any> {
+		let headers = new HttpHeaders().set('Content-Type', 'application/json');
+		return this._http.get(this.url+'get-projects', {headers: headers});
+	}
 }

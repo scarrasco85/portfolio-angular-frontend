@@ -1,1 +1,12 @@
-<p>projects works!</p>
+<!-- Listamos los proyectos obtenidos en el componente -->
+<div class="container">
+	<h2>Proyectos</h2>
+
+	<ul>
+		<!-- Recorremos los proyectos obtenidos para mostrarlos -->
+		<li *ngFor="let project of projects" class="project">
+				<h3>{{project.name}}</h3>
+				<p>{{project.category}}</p>
+		</li>
+	</ul>	
+</div>
