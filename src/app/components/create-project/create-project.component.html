@@ -39,7 +39,8 @@
 		</p>
 		<p>
 			<label for="image">Imagen del proyecto</label>
-			<input type="file" name="image" placeholder="Subir imagen" />
+			<!-- En el input de la imagen lanzamos el evento (change) de angular que salta cuando hacemos algún cambio en un input y llama a otro método que tengamos en nuestro componente. En la variable $event tendremos todos los datos que haya capturado ese input. -->
+			<input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" />
 		</p>
 		<input type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
 	</form>
