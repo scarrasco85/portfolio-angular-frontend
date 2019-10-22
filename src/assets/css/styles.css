@@ -22,7 +22,6 @@ body{
 	font-family: "yanone", Arial, Helvetica;
 	font-size: 20px;
 	background: url("../img/pattern.png");
-	/* Para cuando hagamos scroll no sintamos que el fondo se mueve, si no que se quede fijo. */
 	background-attachment: fixed;
 }
 
@@ -39,23 +38,21 @@ header{
 	width: 100%;
 	height: 90px;
 	background: rgba(53, 103, 164, 0.8);
-	/* Para que se nos quede la barra de navegación siempre fijada arriba */
 	position: fixed;
 	text-transform: uppercase;
 }
 
 /* Menú de navegación */
 header ul{
-	/* para que actúe como un bloque */
 	display: block;
 	width: 50%;
-	height: inherit; /* con inherit hereda del padre */
+	height: inherit; 
 	margin: 0px auto;
 	margin-top: -5px;
 }
 
 header ul li{
-	display: inline-block;/* uno al lado del otro */
+	display: inline-block;
 	margin: 0px auto;
 	text-align: center;
 	line-height: 90px;
@@ -105,8 +102,8 @@ que no tiene función de hover. */
 
 /* Contenedor principal de la página - Content */
 #content{
-	min-height: 500px;
-	height: 100%;
+	min-height: 600px;
+	height: auto;
 	width: 75%;
 	/* centramos el elemento */
 	margin: 0px auto;

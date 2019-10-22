@@ -13,17 +13,21 @@ import { Global } from '../../services/global';
   providers: [ProjectService]
 })
 export class ProjectsComponent implements OnInit {
+
 	//propiedad donde capturaremos los datos de los proyectos para mostrarlos en la vista del componente
 	public projects: Project[];
+	public url: string;
 
 	constructor(
-	  	private _projectService: ProjectService
-	) { }
+			private _projectService: ProjectService
+	){
+		this.url = Global.url;
+			
+	 }
 
 	ngOnInit() {
 		//Llámamos al método que lista los proyectos al cargar el componente
 		this.getProjects();
-		
 	}
 
 	//Método que llama al método con el mismo nombre del servicio del componente project.service,
