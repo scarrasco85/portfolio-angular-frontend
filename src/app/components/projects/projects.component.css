@@ -28,3 +28,9 @@ lo que sobresale de lo que indicamos en ella, en este caso el 100% del ancho y 1
 .project img{
 	width: 100%;
 }
+
+/* Enlaces dentro de la clase CSS project*/
+.project a{
+	text-decoration: none;
+	color: black;
+}

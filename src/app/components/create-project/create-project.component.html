@@ -47,7 +47,7 @@
 
 	<!-- Div para mostrar si el guardado de datos ha sido satisfactirio -->
 	<div class="message success" *ngIf="status == 'success'">
-		El proyecto se ha creado correctamente, puedes verlo <a [routerLink]="['/project-detail/', id_project_saved]">aquí</a>.
+		El proyecto se ha creado correctamente, puedes verlo <a [routerLink]="['/proyecto/', saveProject._id]">aquí</a>.
 	</div>
 	<!-- Div para mostrar si ha habido un error al crear el proyecto -->
 	<div class="message failed" *ngIf="status == 'failed'">

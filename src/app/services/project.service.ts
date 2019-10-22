@@ -49,4 +49,12 @@ export class ProjectService {
 		let headers = new HttpHeaders().set('Content-Type', 'application/json');
 		return this._http.get(this.url+'get-projects', {headers: headers});
 	}
+
+	//Método que devuelve un objeto con toda la información de un proyecto en concreto. Para ello usa el método
+	//get '/project/:id?' del backend de la aplicación
+	getProject(idProject): Observable<any> {
+		let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+		return this._http.get(this.url+'/project/'+idProject, {headers: headers});
+	}
 }

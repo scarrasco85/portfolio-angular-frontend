@@ -28,7 +28,7 @@ export class CreateProjectComponent implements OnInit {
 	public filesToUpload: Array<File>;
 	//La usaremos para guardar el id del proyecto guardado y usarlo en la vista para crear el enlace que
 	//lo muestra en detalle
-	public id_project_saved: string;
+	public saveProject: Project;
 	
 	constructor(
 		//Creamos las propiedades del Servicio
@@ -41,7 +41,6 @@ export class CreateProjectComponent implements OnInit {
 		//Creamos una instancia de objeto Project (modelo componente)
 		this.project = new Project('','','','',this.year.getFullYear(),'','');
 		this.status = "";
-		this.id_project_saved = "";
 	 }
 
 	ngOnInit() {
@@ -70,16 +69,16 @@ export class CreateProjectComponent implements OnInit {
 					if(this.filesToUpload){	
 						this._uploadService.makeFileRequest(Global.url+"/upload-image/"+response.project._id, [], this.filesToUpload, 'image')
 						.then((result:any) => {
-							//Guardamos el id del proyecto guardado para crear el enlace en la vista
-							this.id_project_saved = result.project._id;
+							//Guardamos proyecto guardado para crear el enlace en la vista con su id
+							this.saveProject = result.project;
 							this.status = 'success';
 							form.reset();
 							console.log("Resultado petición ajax subir imágenes proyecto", result);
 						});
 					//Si no hay archivos para subir en filesToUpload también guardamos el enlace
 					}else{
-						//Guardamos el id del proyecto guardado para crear el enlace en la vista
-						this.id_project_saved = response.project._id;
+						//Guardamos proyecto guardado para crear el enlace en la vista con su id
+						this.saveProject = response.project;
 						this.status = 'success';
 						form.reset();
 						console.log("Resultado petición ajax subir imágenes proyecto", response);
