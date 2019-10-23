@@ -6,7 +6,7 @@
 		<!-- Recorremos los proyectos obtenidos para mostrarlos -->
 		<li *ngFor="let project of projects;" class="project">
 			<!-- Hacemos que todo sea un enlace al componente 'project-detail' pasándole el id del proyecto y que nos mostrará toda la información del proyecto -->
-			<a [routerLink]="['/proyecto', saveProject._id]">
+			<a [routerLink]="['/proyecto', project._id]">
 				<!-- Metemos la imagen en un div para crear una máscara(class image), así conseguiremos que todo lo que sobresalga del div lo recorte -->
 				<div class="image">
 					<!-- Mostramos la imagen también si existe -->
