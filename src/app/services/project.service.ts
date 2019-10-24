@@ -64,4 +64,13 @@ export class ProjectService {
 		//.delete es el método Http que nos permite borrar
 		return this._http.delete(this.url+'delete-project/'+idProject, {headers: headers}); 
 	}
+
+	//Método que envía una petición Ajax put para actualizar la información de un proyecto 
+	updateProject(project): Observable<any> {
+		//Convertimos el objeto project recibido con los datos del objeto a actualizar, a un JSON String y pasamos el proyecto entero posteriormente
+		let params = JSON.stringify(project);
+		let headers = new HttpHeaders().set('Content-Type', 'application/json');
+		//Usamos el método .put que sirve para actualizar un recurso en el backend
+		return this._http.put(this.url+'/update-project/'+project._id, params, {headers: headers});
+	}
 }

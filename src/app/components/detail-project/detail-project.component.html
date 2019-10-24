@@ -14,7 +14,7 @@
 			<p>{{ project.langs }}</p>
 			<!-- Si confirm es false -->
 			<p *ngIf="confirm == false">
-				<a href="#" class="button_edit">Editar</a>
+				<a [routerLink]="['/editar-proyecto', project._id]" class="button_edit">Editar</a>
 				<a (click)="setConfirm(true)" class="button_delete">Borrar</a>
 			</p>
 			<!-- Si confirm es true -->
