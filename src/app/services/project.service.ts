@@ -57,4 +57,11 @@ export class ProjectService {
 
 		return this._http.get(this.url+'/project/'+idProject, {headers: headers});
 	}
+
+	//Método que envía una petición Ajax delete Http con el id del proyecto a borrar
+	deleteProject(idProject): Observable<any> {
+		let headers = new HttpHeaders().set('Content-Type', 'application/json');
+		//.delete es el método Http que nos permite borrar
+		return this._http.delete(this.url+'delete-project/'+idProject, {headers: headers}); 
+	}
 }

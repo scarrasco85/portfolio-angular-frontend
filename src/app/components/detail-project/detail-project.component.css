@@ -19,7 +19,7 @@ para la imagen y para los datos */
 	margin-left: 20px;
 }
 /* Botones editar y borrar de la pagína detalle proyecto (Componente project-detail) */
-.button_edit, .button_delete{
+.button_edit, .button_delete, .button_confirm{
 	display: block;
 	font-size: 17px;
 	padding: 5px;
@@ -40,4 +40,15 @@ para la imagen y para los datos */
 
 .button_delete{
 	background: #f02929;
+}
+
+.button_confirm{
+	background: #f02929;
+	width: auto;
+}
+
+.confirm{
+	display: block;
+	font-weight: bold;
+	margin-top: 15px;
 }

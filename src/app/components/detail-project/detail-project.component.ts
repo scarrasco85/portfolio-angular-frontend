@@ -20,6 +20,8 @@ export class DetailProjectComponent implements OnInit {
 	public url: string;
 	//Propiedad para recoger la información del proyecto obtenido para mostrarlo en la vista
 	public project: Project;
+	//Propiedad para pedir la confirmación en caso de querer borrar el proyecto
+	public confirm: boolean;
   	
   	constructor(
   		//Cargamos servicios necesarios en el constructor
@@ -29,6 +31,7 @@ export class DetailProjectComponent implements OnInit {
   	){
   		this.url = Global.url;
 		this.project = new Project("","","","", 0,"","");
+		this.confirm = false;
   	 }
 
   	ngOnInit() {
@@ -62,6 +65,27 @@ export class DetailProjectComponent implements OnInit {
 				console.log(<any>error);
 			}
 		);
+	}
+
+	/* Método para borrar un proyecto, llama al método deleteProject del servicio del componente (project.service.ts) */
+	deleteProject(id) {
+
+		this._projectService.deleteProject(id).subscribe(
+			response => {
+				//si todo ha ido bien hacemos una redirección a la página de proyectos
+				if(response.project){
+					this._router.navigate(['/proyectos']);
+				}
+			},
+			error => {
+				console.log("Error al eliminar el proyecto: ", <any>error);	
+			}
+		);
+	}
+
+	//Método que controla la confirmación de borrado del proyecto
+	setConfirm(confirm){
+		this.confirm = confirm;
 	}
 
 }
