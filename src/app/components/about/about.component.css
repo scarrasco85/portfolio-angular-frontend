@@ -27,7 +27,8 @@
 article.about{
 	width: 70%;
 	margin: 0px auto;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 15px;
 	font-size: 23px;
 }
 
@@ -41,7 +42,6 @@ article.about{
 /* Párrafo de Sobre mí */
 .about p{
 	padding-top: 20px;
-	padding-bottom: 30px;
 	text-align: justify;
 }
 
