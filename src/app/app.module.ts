@@ -17,6 +17,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { DetailProjectComponent } from './components/detail-project/detail-project.component';
 import { EditProjectComponent } from './components/edit-project/edit-project.component';
+//Componente ngx-pagination
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { EditProjectComponent } from './components/edit-project/edit-project.com
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
