@@ -34,3 +34,12 @@ lo que sobresale de lo que indicamos en ella, en este caso el 100% del ancho y 1
 	text-decoration: none;
 	color: black;
 }
+
+/* Div de paginación */
+.pagination{
+	width: 100%;
+	display: block;
+	float: left;
+	justify-content: center;
+	text-align: center;
+}

@@ -17,12 +17,14 @@ export class ProjectsComponent implements OnInit {
 	//propiedad donde capturaremos los datos de los proyectos para mostrarlos en la vista del componente
 	public projects: Project[];
 	public url: string;
+	//La usaremos en el componente ngx-pagination
+	public actualPage: number;
 
 	constructor(
 			private _projectService: ProjectService
 	){
 		this.url = Global.url;
-			
+		this.actualPage = 1;			
 	 }
 
 	ngOnInit() {
