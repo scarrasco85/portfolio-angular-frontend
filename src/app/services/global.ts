@@ -2,5 +2,5 @@
 export var Global = {
 	//url Api-Rest
 	//url: 'http://localhost:3700/api/'
-	url: 'https://portafolio-angular-nodejs.herokuapp.com/api/'
+	url: 'http://206.189.59.11/api/'
 };
