@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+//Modelo del componente
+import { Project } from '../../models/project';
+//Servicio del componente
+import { ProjectService } from '../../services/project.service';
+//Archivo de configuracion global
+import { Global } from '../../services/global';
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +13,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public url: string;
+
+  constructor(
+    private _projectService: ProjectService
+  ) { 
+    this.url = Global.url;
+  }
 
   ngOnInit() {
   }
