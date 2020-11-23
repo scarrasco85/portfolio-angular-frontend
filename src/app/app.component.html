@@ -1,4 +1,4 @@
-<!-- Header - Cabezera -->
+<!-- Header -->
 <header>
     <ul>
         <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre mi</a></li>
@@ -8,13 +8,12 @@
         <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
     </ul>
 </header>
-<!-- Cuerpo - Body -->
+<!-- Body -->
 <section id="content">
-    <!-- Los componentes se cargaran en la etiqueta router-oulet -->
     <router-outlet></router-outlet>
 </section>
 
-<!-- Pié de página -->
+<!-- Footer -->
 <footer>
     Proyecto portafolio personal - Sergio Carrasco &copy;
 </footer>

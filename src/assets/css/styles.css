@@ -1,4 +1,4 @@
-/* Importar fuentes custom */
+/* Custom fonts */
 
 @font-face {
     font-family: "yanone";
@@ -11,11 +11,7 @@
 }
 
 
-/* ******************************* Estilos generales ********************************** */
-
-
-/* Margen y padding 0px para todos los elementos, así poder controlar 100% los tamaños y márgenes de los 
-   elementos */
+/* ******************************* General Styles ********************************** */
 
 * {
     margin: 0px;
@@ -30,7 +26,7 @@ body {
 }
 
 
-/* Limpiamos los flotados entre los diferentes elementos */
+/* Clean floats between different elements */
 
 .clearfix {
     float: none;
@@ -38,7 +34,7 @@ body {
 }
 
 
-/* Header - Cabezera */
+/* Header */
 
 header {
     display: block;
@@ -51,7 +47,7 @@ header {
 }
 
 
-/* Menú de navegación */
+/* NavBar */
 
 header ul {
     display: block;
@@ -78,42 +74,26 @@ header a {
     transition: all 300ms;
 }
 
-
-/* Le ponemos fondo negro a los enlaces del menú al pasar el ratón por encima. Y
-   le añadimos la clase .actived al estár seleccionado en el menú. Esto lo hace la directiva
-   [routerLinkActive] aplicada en la vista del menú app.component.html */
-
 header a:hover,
 .actived {
     background: rgba(0, 0, 0, 0.8);
 }
-
-
-/* Evitamos que el logo tenga la transición cuando pasemos el cursor por encima */
 
 header #logo a:hover {
     background: transparent;
 }
 
 
-/*  Estilos Logotipo Menú */
+/*  Logo */
 
 #logo {
     font-family: finger;
     font-size: 35px;
 }
 
-
-/* Metemos un efecto de transición al enlace del color y una transformación, de
-   500ms ambos, definimos la transición en #logo a:hover{} */
-
 #logo a {
     transition: color 500ms, tranform 500ms;
 }
-
-
-/* Al logo como es un enlace también le ponemos fondo transparente para que parezca
-que no tiene función de hover. */
 
 #logo a:hover {
     background: transparent;
@@ -122,13 +102,12 @@ que no tiene función de hover. */
 }
 
 
-/* Contenedor principal de la página - Content */
+/* Principal Content */
 
 #content {
     min-height: 600px;
     height: auto;
     width: 75%;
-    /* centramos el elemento */
     margin: 0px auto;
     box-shadow: 0px 0px 40px black;
     border-left: 1px solid #b7b7b7;
@@ -138,7 +117,7 @@ que no tiene función de hover. */
 }
 
 
-/* Estilos Contenedor de cada página */
+/* Page container */
 
 .container {
     padding: 50px;
@@ -153,7 +132,7 @@ que no tiene función de hover. */
 }
 
 
-/* Pié de página - Footer */
+/* Footer */
 
 footer {
     display: block;
@@ -168,7 +147,7 @@ footer {
 }
 
 
-/* Estilos formularios de la página */
+/* Page forms */
 
 form {
     width: 80%;
@@ -226,7 +205,7 @@ form input[disabled] {
 }
 
 
-/* Mensajes success y failed formularios */
+/* Forms messages */
 
 .message {
     width: 50%;

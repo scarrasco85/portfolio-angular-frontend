@@ -7,10 +7,9 @@
 }
 
 
-/* Encabezado h1 del título*/
+/* Title header */
 
 #title h1 {
-    /* Fuente importada en styles.css */
     font-family: "finger";
     font-size: 60px;
     border-bottom: 1px solid #ccc;
@@ -18,7 +17,7 @@
 }
 
 
-/* Encabezado h2 del título (subtitle) */
+/* Subtitle */
 
 #title h2 {
     font-size: 25px;
@@ -28,7 +27,7 @@
 }
 
 
-/* Contenido de about (etiqueta article con clase about) */
+/* About content */
 
 article.about {
     width: 70%;
@@ -39,7 +38,7 @@ article.about {
 }
 
 
-/* Título Sobre mí */
+/* Title "Sobre mí" */
 
 .about h2 {
     border-bottom: 1px solid #ccc;
@@ -48,7 +47,7 @@ article.about {
 }
 
 
-/* Párrafo de Sobre mí */
+/* Paragraph "Sobre mí" */
 
 .about p {
     padding-top: 20px;
@@ -56,7 +55,7 @@ article.about {
 }
 
 
-/* Imagen de perfil*/
+/* Profile image */
 
 .profile_image img {
     width: 250px;

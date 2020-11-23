@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//Archivo de configuracion global
 import { Global } from '../../services/global';
 
 @Component({

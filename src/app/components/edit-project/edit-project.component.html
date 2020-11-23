@@ -1,4 +1,3 @@
-<!-- Necesitamos poner un ngIf para que no de error en el componente edit-project porque intente cargar los datos antes que se haya cargado el objeto project. Esto es porque al cargar el componente en el método(ngOnInit) llamamos al método getProject para cargar los datos del proyecto a editar, y cómo javascrit carga antes que Ajax tenemos que poner el ngIf="project" para que solo lo cargue si el objeto project ya contiene algo. -->
 <div class="container" *ngIf="project">
     <h2>{{title}}</h2>
 
@@ -40,23 +39,21 @@
         </p>
         <p>
             <label for="image">Imagen del proyecto</label>
-            <!-- Cargamos la imagen si project existe, ya que javascript carga antes que Ajax-->
             <span class="image" *ngIf="project.image">
 				<!-- Mostramos la imagen también si existe -->
 				<img src="{{url+'/get-image/'+project.image}}" width="100px" />
 			</span>
             <br/>
-            <!-- En el input de la imagen lanzamos el evento (change) de angular llamamos al método fileChangeEvent pasándole lo que contiene el input con la variable $event -->
+
             <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" />
         </p>
         <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
     </form>
 
-    <!-- Div para mostrar si la actualización ha sido satisfactoria -->
     <div class="message success" *ngIf="status == 'success'">
         El proyecto se ha actualizado correctamente, puedes verlo <a [routerLink]="['/proyecto/', saveProject]">aquí</a>.
     </div>
-    <!-- Div para mostrar si ha habido un error al actualizar el proyecto -->
+
     <div class="message failed" *ngIf="status == 'failed'">
         Ha ocurrido un error al actualizar el proyecto.
     </div>

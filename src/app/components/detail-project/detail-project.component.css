@@ -1,9 +1,4 @@
-/* Estilos página detalle del proyecto (Componente project-detail) */
-
-
-/* Flotamos a la izquierda la imagen del detalle del proyecto de la página project-detail, y le damos
-un width dentro del contenedor del 47% y a los datos que mostramos(.data). Así dividimos el contenedor
-para la imagen y para los datos */
+/* Project image */
 
 .container .projectDetail .image {
     float: left;
@@ -11,9 +6,11 @@ para la imagen y para los datos */
 }
 
 .container .projectDetail .image img {
-    /* A la imagen le damos el 100% del 47% del contenedor */
     width: 100%;
 }
+
+
+/* Project data */
 
 .container .projectDetail .data {
     float: left;
@@ -22,7 +19,16 @@ para la imagen y para los datos */
 }
 
 
-/* Botones editar y borrar de la pagína detalle proyecto (Componente project-detail) */
+/* GitHub link */
+
+a {
+    text-decoration: none;
+    color: rgba(53, 103, 164, 0.8);
+    font-weight: bold;
+}
+
+
+/* Buttons */
 
 .button_edit,
 .button_delete,
@@ -58,10 +64,4 @@ para la imagen y para los datos */
     display: block;
     font-weight: bold;
     margin-top: 15px;
-}
-
-a {
-    text-decoration: none;
-    color: rgba(53, 103, 164, 0.8);
-    font-weight: bold;
 }

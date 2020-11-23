@@ -1,4 +1,4 @@
-/* Definimos el modelo de la entidad Proyecto (Project)*/
+/** Project Model **/
 export class Project {
 
 	constructor(

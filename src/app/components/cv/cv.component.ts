@@ -10,7 +10,8 @@ export class CvComponent implements OnInit {
   public pdfSrc: string;
 
   constructor() {
-
+      
+      // CV link
       this.pdfSrc = "/assets/Sergio_Carrasco_CV.pdf";
   }
 
