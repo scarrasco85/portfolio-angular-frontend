@@ -17,8 +17,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { DetailProjectComponent } from './components/detail-project/detail-project.component';
 import { EditProjectComponent } from './components/edit-project/edit-project.component';
+import { CvComponent } from './components/cv/cv.component';
 //Componente ngx-pagination
 import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ContactComponent,
     ErrorComponent,
     DetailProjectComponent,
-    EditProjectComponent
+    EditProjectComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,

@@ -9,10 +9,12 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { DetailProjectComponent } from './components/detail-project/detail-project.component';
 import { EditProjectComponent } from './components/edit-project/edit-project.component';
+import { CvComponent } from './components/cv/cv.component';
 
 const routes: Routes = [
 	{path: '', component: AboutComponent},
 	{path: 'sobre-mi', component: AboutComponent},
+	{path: 'cv', component: CvComponent},
 	{path: 'proyectos', component: ProjectsComponent},
 	{path: 'crear-proyecto', component: CreateProjectComponent},
 	{path: 'contacto', component: ContactComponent},
