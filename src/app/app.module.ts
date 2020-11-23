@@ -20,6 +20,8 @@ import { EditProjectComponent } from './components/edit-project/edit-project.com
 import { CvComponent } from './components/cv/cv.component';
 //Componente ngx-pagination
 import { NgxPaginationModule } from 'ngx-pagination';
+// pdf viewer
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

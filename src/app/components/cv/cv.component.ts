@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvComponent implements OnInit {
 
-  constructor() { }
+  public pdfSrc: string;
+
+  constructor() {
+
+      this.pdfSrc = "/assets/Sergio_Carrasco_CV.pdf";
+  }
 
   ngOnInit() {
   }
