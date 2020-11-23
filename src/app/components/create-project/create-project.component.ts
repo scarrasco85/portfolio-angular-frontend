@@ -39,7 +39,7 @@ export class CreateProjectComponent implements OnInit {
 		this.title = "Crear nuevo proyecto";
 		this.year = new Date();
 		//Creamos una instancia de objeto Project (modelo componente)
-		this.project = new Project('','','','',this.year.getFullYear(),'','');
+		this.project = new Project('','','','',this.year.getFullYear(),'','', null);
 		this.status = "";
 	 }
 

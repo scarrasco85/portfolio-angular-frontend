@@ -1,30 +1,31 @@
 <!-- Cargamos la información si project existe, ya que cómo javascript carga antes que Ajax-->
 <div class="container" *ngIf="project">
-	
-	<div class="projectDetail" *ngIf="project">
-		<!-- Cargamos la imagen si project existe, ya que cómo javascript carga antes que Ajax-->
-		<div class="image" *ngIf="project.image">
-			<!-- Mostramos la imagen también si existe -->
-			<img src="{{url+'/get-image/'+project.image}}" *ngIf="project.image" />
-		</div>
-		<div class="data">
-			<h1>{{ project.name }}</h1>
-			<h4>{{ project.description }}</h4>
-			<p>{{ project.category }}</p>
-			<p>{{ project.langs }}</p>
-			<!-- Si confirm es false -->
-			<p *ngIf="confirm == false">
-				<a [routerLink]="['/editar-proyecto', project._id]" class="button_edit">Editar</a>
-				<a (click)="setConfirm(true)" class="button_delete">Borrar</a>
-			</p>
-			<!-- Si confirm es true -->
-			<p *ngIf="confirm == true">
-				<span class="confirm">¿Estás seguro de eliminar este proyecto?</span> <br/>
-				<a (click)="setConfirm(false)" class="button_edit">Cancelar</a>
-				<!-- Llama al método deleteProject del componente-->
-				<a (click)="deleteProject(project._id)" class="button_confirm">Eliminar definitivamente</a>
-			</p>
-		</div>
-	</div>
-</div>
 
+    <div class="projectDetail" *ngIf="project">
+        <!-- Cargamos la imagen si project existe, ya que cómo javascript carga antes que Ajax-->
+        <div class="image" *ngIf="project.image">
+            <!-- Mostramos la imagen también si existe -->
+            <img src="{{url+'/get-image/'+project.image}}" *ngIf="project.image" />
+        </div>
+        <div class="data">
+            <h1>{{ project.name }}</h1>
+            <h4>{{ project.description }}</h4>
+            <p>{{ project.category }}</p>
+            <p>{{ project.langs }}</p>
+            <p><a href="{{ project.gitHub }}" target="_blank">{{ project.gitHub }}</a></p>
+
+            <!-- Si confirm es false -->
+            <p *ngIf="confirm == false">
+                <a [routerLink]="['/editar-proyecto', project._id]" class="button_edit">Editar</a>
+                <a (click)="setConfirm(true)" class="button_delete">Borrar</a>
+            </p>
+            <!-- Si confirm es true -->
+            <p *ngIf="confirm == true">
+                <span class="confirm">¿Estás seguro de eliminar este proyecto?</span> <br/>
+                <a (click)="setConfirm(false)" class="button_edit">Cancelar</a>
+                <!-- Llama al método deleteProject del componente-->
+                <a (click)="deleteProject(project._id)" class="button_confirm">Eliminar definitivamente</a>
+            </p>
+        </div>
+    </div>
+</div>

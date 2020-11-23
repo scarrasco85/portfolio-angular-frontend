@@ -30,7 +30,7 @@ export class DetailProjectComponent implements OnInit {
   		private _route: ActivatedRoute
   	){
   		this.url = Global.url;
-		this.project = new Project("","","","", 0,"","");
+		this.project = new Project("","","","", 0,"","",null);
 		this.confirm = false;
   	 }
 
