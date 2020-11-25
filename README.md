@@ -1,27 +1,52 @@
-# PortafolioAngularFrontend
+# Portafolio Angular Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+---
+## What is Portfolio Angular Frontend? 🤔
 
-## Development server
+Full MEAN Stack application in conjunction with the 'backend-portfolio-angular' app. We are talking about a Frontend App to show a portfolio and personal resume. It is built in Angular and consumes data from the Api-Rest 'backend-portfolio-angular', which is developed in NodeJS and MongoDB.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installation 🔧
 
-## Code scaffolding
+After cloning the repository remember to install the node modules:
+```
+npm install
+```
+Start app with the command:
+```
+npm start
+```
+By default the app runs in: [](http://localhost:4200/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Remember that you need download be running 'backend-portfolio-angular' for the app runs successfully. You can see how to do it here.
 
-## Build
+---
+## Technologies used 🛠️
+- MEAN Stack
+- HTML
+- CSS
+- Angular
+- TypeScript
+- NodeJS
+- MongoDB
+- Express
+- Robo3T
+- Visual Studio Code
+- Git/Git Hub
+- Postman
+- Heroku
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Do you want to see the application running? 🚀
 
-## Running unit tests
+Coming soon...
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
+## Some working samples ⚙️
+#### Create a new user
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+![](server/assets/Ejemplo_uso_cafe_node.png)
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
