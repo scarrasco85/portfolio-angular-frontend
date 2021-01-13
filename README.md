@@ -45,10 +45,10 @@ Coming soon...
 ## Responsive views - Some examples
 #### Desktop view:
 
-![](img/screenshots/desktop1.png)
+![](assets/img/screenshots/desktop1.png)
 ---
 ***
-![](img/screenshots/desktop2.png)
+![](assets/img/screenshots/desktop2.png)
 ---
 ***
 
