@@ -1,0 +1,35 @@
+@media (max-width:996px) {
+    #title h1 {
+        font-size: 6vw !important;
+    }
+}
+
+@media (max-width:800px) {
+    .profile_image img {
+        width: 32vw !important;
+    }
+    #title h2 {
+        font-size: 3.1vw !important;
+    }
+    #title p {
+        font-size: 2.2vw !important;
+    }
+    article.about {
+        font-size: 3vw !important;
+    }
+}
+
+@media (max-width:599px) {
+    .profile_image img {
+        width: 32vw !important;
+    }
+    #title h2 {
+        font-size: x-large !important;
+    }
+    #title p {
+        font-size: medium !important;
+    }
+    article.about {
+        font-size: medium !important;
+    }
+}

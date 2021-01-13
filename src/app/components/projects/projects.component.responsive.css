@@ -1,0 +1,19 @@
+@media(max-width: 800px) {
+    .project {
+        flex-basis: 30%;
+    }
+}
+
+@media(max-width: 599px) {
+    .project {
+        flex-basis: 50%;
+    }
+}
+
+@media(max-width: 459px) {
+    .project {
+        flex-basis: 60%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

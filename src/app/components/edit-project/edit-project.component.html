@@ -38,6 +38,10 @@
 			</span>
         </p>
         <p>
+            <label for="gitHub">GitHub</label>
+            <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.gitHub" />
+        </p>
+        <p>
             <label for="image">Imagen del proyecto</label>
             <span class="image" *ngIf="project.image">
 				<!-- Mostramos la imagen también si existe -->

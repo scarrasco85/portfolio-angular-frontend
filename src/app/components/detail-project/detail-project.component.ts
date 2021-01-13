@@ -7,7 +7,8 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 @Component({
   selector: 'app-detail-project',
   templateUrl: './detail-project.component.html',
-  styleUrls: ['./detail-project.component.css'],
+  styleUrls: ['./detail-project.component.css',
+		      './detail-project.component.css'],
   providers: [ProjectService]
 })
 export class DetailProjectComponent implements OnInit {

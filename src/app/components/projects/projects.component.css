@@ -1,45 +1,57 @@
-.projects{
-	display: block;
-	margin-left: 20px;
+#projects-list {
+    /* display: block;
+    margin-left: 20px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
+
 /* Estilos de cada <li> del listado de proyectos */
-.project{
-	list-style: none;
-	display: block;
-	float: left;
-	width: 27%;
-	text-align: center;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 30px;
+
+.project {
+    flex-grow: 1;
+    flex-basis: 24%;
+    list-style: none;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
 }
 
 
 /* Clase CSS .image que hay dentro de la .project, con ella hacemos la máscara para que corte todo
 lo que sobresale de lo que indicamos en ella, en este caso el 100% del ancho y 150px de alto. */
-.project .image{
-	width: 100%;
-	height: 150px;
-	overflow: hidden;
+
+.project .image {
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    overflow: hidden;
 }
+
 
 /* Imágenes dentro de la clase CSS project */
-.project img{
-	width: 100%;
+
+.project img {
+    width: 100%;
 }
+
 
 /* Enlaces dentro de la clase CSS project*/
-.project a{
-	text-decoration: none;
-	color: black;
+
+.project a {
+    text-decoration: none;
+    color: black;
 }
 
+
 /* Div de paginación */
-.pagination{
-	width: 100%;
-	display: block;
-	float: left;
-	justify-content: center;
-	text-align: center;
+
+.pagination {
+    width: 100%;
+    display: block;
+    float: left;
+    justify-content: center;
+    text-align: center;
 }

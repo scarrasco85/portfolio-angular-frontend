@@ -1,0 +1,14 @@
+@media (max-width:750px) {
+    .container .projectDetail .image {
+        width: 90%;
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:599px) {
+    .container .projectDetail .image {
+        width: 100%;
+        margin-left: 0px;
+    }
+}

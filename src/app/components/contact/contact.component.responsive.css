@@ -1,0 +1,6 @@
+@media (max-width:599px) {
+    #contactInfo h1,
+    #contactInfo h2 {
+        font-size: x-large;
+    }
+}

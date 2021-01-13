@@ -1,0 +1,31 @@
+@media (max-width:800px) {
+    form {
+        width: 100%;
+    }
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="email"],
+    form textarea {
+        width: 60%;
+        /* To put down the formError tags */
+        clear: both;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .formError {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:570px) {
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="email"],
+    form textarea {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+    form input[name="image"] {
+        width: 100%;
+    }
+}

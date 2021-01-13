@@ -1,12 +1,15 @@
+.container {
+    min-height: 600px;
+}
+
+
 /* Project image */
 
 .container .projectDetail .image {
     float: left;
-    width: 47%;
-}
-
-.container .projectDetail .image img {
-    width: 100%;
+    width: 60%;
+    max-width: 600px;
+    margin-right: 15px;
 }
 
 
@@ -14,8 +17,22 @@
 
 .container .projectDetail .data {
     float: left;
-    width: 47%;
-    margin-left: 20px;
+    width: 100%;
+}
+
+.container .projectDetail .data p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: medium;
+    text-align: justify;
+}
+
+.container .projectDetail .data .tag {
+    text-align: left;
+}
+
+.container .projectDetail .data .tag span {
+    font-weight: bold;
 }
 
 
@@ -40,7 +57,8 @@ a {
     color: white;
     border: 1px solid rgba(13, 67, 133, 1);
     cursor: pointer;
-    width: 35%;
+    width: 15%;
+    max-width: 170px;
     float: left;
     margin-right: 10px;
     text-align: center;
