@@ -57,6 +57,21 @@ Coming soon...
 ---
 ***
 
+#### Medium view - 800px:
+![](screenshots/800px.png)
+---
+***
+
+#### Small view - 599px:
+![](screenshots/599px.png)
+---
+***
+
+#### Small view - 400px:
+![](screenshots/400px.png)
+---
+***
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
