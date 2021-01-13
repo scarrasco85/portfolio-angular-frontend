@@ -17,7 +17,7 @@ npm start
 ```
 By default the app runs in: [http://localhost:4200/](http://localhost:4200/).
 
-Remember that you need download be running 'backend-portfolio-angular' for the app runs successfully. You can see how to do it here.
+Remember that you need to download and be running 'backend-portfolio-angular' for the app runs successfully. You can see how to do it [here](https://github.com/scarrasco85/backend-portfolio-angular).
 
 ---
 ## Technologies used 🛠️
