@@ -1,7 +1,7 @@
-# Portafolio Angular Frontend
+# Portafolio Angular Frontend Responsive
 
 ---
-## What is Portfolio Angular Frontend? 🤔
+## What is Portfolio Angular Frontend Responsive? 🤔
 
 Full MEAN Stack application in conjunction with the 'backend-portfolio-angular' app. We are talking about a Frontend App to show a portfolio and personal resume. It is built in Angular and consumes data from the Api-Rest 'backend-portfolio-angular', which is developed in NodeJS and MongoDB.
 
@@ -42,9 +42,15 @@ Coming soon...
 
 ---
 ## Some working samples ⚙️
-#### Create a new user
+## Responsive views - Some examples
+#### Desktop view:
 
-![](server/assets/Ejemplo_uso_cafe_node.png)
+![](img/screenshots/desktop1.png)
+---
+***
+![](img/screenshots/desktop2.png)
+---
+***
 
 ## Further help
 
