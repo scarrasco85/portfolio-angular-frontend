@@ -46,9 +46,14 @@ Coming soon...
 #### Desktop view:
 
 ![](screenshots/desktop1.png)
----
 ***
 ![](screenshots/desktop2.png)
+***
+![](screenshots/desktop3.png)
+***
+![](screenshots/desktop4.png)
+***
+![](screenshots/desktop5.png)
 ---
 ***
 
