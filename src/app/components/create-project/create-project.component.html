@@ -31,10 +31,10 @@
 			</span>
         </p>
         <p>
-            <label for="langs">Lenguajes utilizados</label>
+            <label for="langs">Lenguajes/Tecnologías</label>
             <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs" required />
             <span class="formError" *ngIf="langs.touched && !langs.valid">
-				Detallar los lenguajes utilizados es obligatorio.
+				Detallar los lenguajes o tecnologías utilizados es obligatorio.
 			</span>
         </p>
         <p>

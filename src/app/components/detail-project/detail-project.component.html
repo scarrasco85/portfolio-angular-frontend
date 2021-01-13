@@ -13,7 +13,7 @@
             <p>{{ project.description }}</p>
             <br>
             <p class="tag"><span> Categoría: </span>{{ project.category }}</p>
-            <p class="tag"><span> Lenguajes: </span>{{ project.langs }}</p>
+            <p class="tag"><span> Lenguajes/Tecnologías: </span>{{ project.langs }}</p>
             <p class="tag" *ngIf="project.gitHub"><span> GitHub: </span> <a href="{{ project.gitHub }}" target="_blank">{{ project.gitHub }}</a></p>
 
             <p *ngIf="confirm == false">

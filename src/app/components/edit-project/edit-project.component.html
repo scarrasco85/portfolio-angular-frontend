@@ -31,15 +31,15 @@
 			</span>
         </p>
         <p>
-            <label for="langs">Lenguajes utilizados</label>
+            <label for="langs">Lenguajes/Tecnologías</label>
             <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs" required />
             <span class="formError" *ngIf="langs.touched && !langs.valid">
-				Detallar los lenguajes utilizados es obligatorio.
+				Detallar los lenguajes/tecnologías utilizados es obligatorio.
 			</span>
         </p>
         <p>
             <label for="gitHub">GitHub</label>
-            <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.gitHub" />
+            <input type="text" name="gitHub" #langs="ngModel" [(ngModel)]="project.gitHub" />
         </p>
         <p>
             <label for="image">Imagen del proyecto</label>
